@@ -1,29 +1,4 @@
-server:
-  port: 8080
-
 spring:
   profiles:
-    active: local
+    active: ${SPRING_PROFILE:local}
 
-  cloud:
-    config:
-      enabled: false  # disables config server in this microservice
-
-  datasource:
-    url: jdbc:mysql://localhost:3306/world
-    username: root
-    password: ashburn
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
-  jpa:
-    database-platform: org.hibernate.dialect.MySQL8Dialect
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-    hibernate:
-      ddl-auto: validate
-
-spring-doc:
-  swagger-ui:
-    path: /swagger-ui.html
