@@ -1,4 +1,6 @@
 spring:
+  config:
+    import:optional:configserver:
   profiles:
     active: ${SPRING_PROFILE:local}
 
