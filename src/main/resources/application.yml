@@ -2,6 +2,9 @@ server:
   port: 8080
 
 spring:
+  profiles:
+    active: local
+
   cloud:
     config:
       enabled: false  # disables config server in this microservice
