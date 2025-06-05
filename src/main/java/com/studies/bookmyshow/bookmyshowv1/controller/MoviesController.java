@@ -15,7 +15,6 @@ public class MoviesController {
     @Autowired
     private MoviesService moviesService;
 
-
     @PostMapping("/saveMovie")
     public MovieResponseDto saveMovie(@RequestBody MovieRequestDto movieRequestDto){
         return moviesService.saveMovie(movieRequestDto);

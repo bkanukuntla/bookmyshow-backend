@@ -57,7 +57,6 @@ public class MoviesService {
     }
 
 
-
     private List<MovieResponseDto> convertEntityListToDtoList(List<MoviesEntity> moviesEntities){
         List<MovieResponseDto> movieResponseDtos = new ArrayList<>();
 
