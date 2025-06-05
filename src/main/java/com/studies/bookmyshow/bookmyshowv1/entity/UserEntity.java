@@ -23,12 +23,16 @@ public class UserEntity {
     @Id
     @Column(name = "user_id", columnDefinition = "CHAR(36)")
     private String userId = UUID.randomUUID().toString();
+
     private String name;
+
     private String email;
+
     @Column(name = "phone_number")
     private String phoneNumber;
+
     @Column(name = "created_at")
-    private LocalDateTime createdAt= LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     @Column(nullable = false)
     private String password;
